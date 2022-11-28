@@ -2,7 +2,7 @@
   "compilerOptions": { "lib": ["deno.window", "dom"] },
   "importMap": "import_map.json",
   "tasks": {
-    "dev": "deno run --allow-net server.ts",
+    "dev": "deno run --allow-read --allow-net --allow-run --allow-env --allow-write server.ts",
     "start": "echo TODO",
     "build": "echo TODO"
   }

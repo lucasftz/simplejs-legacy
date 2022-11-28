@@ -1,13 +1,7 @@
-import * as esbuild from "https://deno.land/x/esbuild@v0.15.16/wasm.js";
+import * as packer from "https://deno.land/x/packup@v0.2.2/cli.ts";
 
-async function build() {
-  await esbuild
-    .build({
-      entryPoints: ["src/index.ts"],
-      bundle: true,
-      outfile: "index.bundle.js",
-    })
-    .catch(() => Deno.exit(1));
+function build() {
+  packer.main(["index.html"]);
 }
 
 function serve() {
