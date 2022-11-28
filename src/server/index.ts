@@ -1,7 +1,7 @@
-import * as packer from "https://deno.land/x/packup@v0.2.2/cli.ts";
+import * as packup from "https://deno.land/x/packup@v0.2.2/cli.ts";
 
 function build() {
-  packer.main(["index.html"]);
+  packup.main(["index.html"]);
 }
 
 function serve() {
