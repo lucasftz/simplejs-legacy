@@ -3,7 +3,7 @@ import * as esbuild from "https://deno.land/x/esbuild@v0.15.16/wasm.js";
 async function build() {
   await esbuild
     .build({
-      entryPoints: ["index.ts"],
+      entryPoints: ["src/index.ts"],
       bundle: true,
       outfile: "index.bundle.js",
     })
