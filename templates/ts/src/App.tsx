@@ -1,4 +1,5 @@
 import { h as _h } from "simplejs/dom";
+import { useSignal } from "simplejs/hooks";
 
 /* @jsx _h */
 
