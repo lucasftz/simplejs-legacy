@@ -1,7 +1,7 @@
 // deno-lint-ignore ban-types
-type Props = { [name: string]: string | Function };
-// deno-lint-ignore ban-types
-const isEvent = (name: string, _value: string | Function): _value is Function =>
+type Fn = Function;
+type Props = { [name: string]: string | Fn };
+const isEvent = (name: string, _value: string | Fn): _value is Fn =>
   name.startsWith("on");
 
 function h(
