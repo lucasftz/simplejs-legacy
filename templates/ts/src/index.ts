@@ -5,4 +5,4 @@ function Root() {
   return App();
 }
 
-render(Root, document.getElementById("mount") as HTMLElement);
+render(Root, document.getElementById("mount"));
