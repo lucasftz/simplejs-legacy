@@ -4,7 +4,7 @@ import { App } from "~/src/App.tsx";
 /* @jsx _h */
 
 function Root() {
-  return App();
+  return <App />;
 }
 
 render(Root, document.getElementById("mount") as HTMLElement);
