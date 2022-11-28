@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "~/": "./",
+    "std/": "https://deno.land/std@0.155.0/",
+    "simplejs": "https://raw.githubusercontent.com/lucasftz/simplejs/main/index.ts"
+  },
+  "scopes": {}
+}

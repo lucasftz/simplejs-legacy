@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {},
+  "importMap": "import_map.json",
+  "tasks": {
+    "dev": "echo TODO",
+    "start": "echo TODO",
+    "build": "echo TODO"
+  }
+}
