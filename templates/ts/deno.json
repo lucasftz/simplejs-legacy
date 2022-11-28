@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": { "lib": ["deno.window", "dom"] },
   "importMap": "import_map.json",
   "tasks": {
     "dev": "echo TODO",

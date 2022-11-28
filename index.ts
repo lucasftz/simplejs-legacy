@@ -1,3 +1,7 @@
-import { h } from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/h/h.ts";
+import {
+  h,
+  render,
+  server,
+} from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/dom/index.ts";
 
-export { h };
+export { h, render, server };

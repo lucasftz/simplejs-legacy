@@ -1,4 +1,8 @@
-import { h } from "simplejs";
+import { render } from "simplejs/dom";
+import { App } from "~/src/App.ts";
 
-const testDiv = h("div", null, "hello world");
-console.log(testDiv);
+function Root() {
+  return App();
+}
+
+render(Root, document.getElementById("mount") as HTMLElement);
