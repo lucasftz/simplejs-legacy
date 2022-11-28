@@ -1,3 +1,5 @@
+import { useEffect } from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/hooks/index.ts";
+
 // deno-lint-ignore ban-types
 type Fn = Function;
 type Props = { [name: string]: string | Fn };
@@ -8,10 +10,18 @@ const isComponent = (
   tagname: keyof HTMLElementTagNameMap | Component
 ): tagname is Component => typeof tagname === "function";
 
+const handleBraced = (element: HTMLElement, child: () => string) => {
+  useEffect(() => {
+    element.textContent = child();
+  });
+
+  return null;
+};
+
 function h(
   tagname: keyof HTMLElementTagNameMap | Component,
   props: Props | null,
-  ...children: (Node | string)[] | undefined[]
+  ...children: (Node | string | (() => string))[] | undefined[]
 ): HTMLElement {
   const element = isComponent(tagname)
     ? tagname()
@@ -33,8 +43,13 @@ function h(
   for (const child of children) {
     if (!child) break;
     const childNode =
-      typeof child === "string" ? document.createTextNode(child) : child;
-    element.append(childNode);
+      typeof child === "string"
+        ? document.createTextNode(child)
+        : typeof child === "function"
+        ? handleBraced(element, child)
+        : child;
+
+    childNode && element.append(childNode);
   }
 
   return element;
