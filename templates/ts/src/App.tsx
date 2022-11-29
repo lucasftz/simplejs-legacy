@@ -1,7 +1,4 @@
-import { h as _h } from "simplejs/dom";
 import { Counter } from "~/src/Counter.tsx";
-
-/* @jsx _h */
 
 function App() {
   return (

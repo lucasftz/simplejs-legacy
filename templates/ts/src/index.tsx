@@ -1,7 +1,5 @@
-import { render, h as _h } from "simplejs/dom";
+import { render, h as React } from "simplejs/dom";
 import { App } from "~/src/App.tsx";
-
-/* @jsx _h */
 
 function Root() {
   return <App />;
