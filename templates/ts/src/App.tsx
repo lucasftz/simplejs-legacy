@@ -1,5 +1,7 @@
 import { Counter } from "~/Counter.tsx";
 
+// @jsx _h
+
 function App() {
   return (
     <div>

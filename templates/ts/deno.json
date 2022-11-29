@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "lib": ["deno.window", "dom"],
-    "jsxImportSource": "simplejs"
+    "jsx": "react-jsxdev",
+    "jsxFactory": "jsx"
   },
   "importMap": "import_map.json",
   "tasks": {
