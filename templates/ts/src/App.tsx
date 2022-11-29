@@ -1,4 +1,3 @@
-import { React, JSX } from "simplejs/dom";
 import { Counter } from "~/Counter.tsx";
 
 function App() {
