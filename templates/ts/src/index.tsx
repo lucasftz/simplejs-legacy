@@ -1,4 +1,4 @@
-import { render, h as _h } from "simplejs/dom";
+import { render, _h } from "simplejs/dom";
 import { App } from "~/App.tsx";
 
 // @jsx _h

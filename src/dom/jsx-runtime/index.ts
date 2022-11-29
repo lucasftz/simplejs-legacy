@@ -1,5 +1,5 @@
-import { h } from "./h.ts";
+import { _h } from "./h.ts";
 import type { JSX } from "./jsx.ts";
 
-export { h };
+export { _h };
 export type { JSX };

@@ -18,7 +18,7 @@ const handleBraced = (element: HTMLElement, child: () => string) => {
   return null;
 };
 
-function h(
+function _h(
   tagname: keyof HTMLElementTagNameMap | Component,
   props: Props | null,
   ...children: (Node | string | (() => string))[] | undefined[]
@@ -55,4 +55,4 @@ function h(
   return element;
 }
 
-export { h };
+export { _h };

@@ -1,3 +1,4 @@
+import { _h } from "simplejs/dom";
 import { Counter } from "~/Counter.tsx";
 
 // @jsx _h
