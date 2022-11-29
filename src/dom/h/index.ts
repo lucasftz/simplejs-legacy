@@ -55,4 +55,6 @@ function createElement(
   return element;
 }
 
-export const h = { createElement };
+const h = { createElement };
+
+export default h;

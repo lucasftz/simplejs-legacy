@@ -1,5 +1,5 @@
-import { signal } from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/hooks/signal/index.ts";
-import { effect } from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/hooks/effect/index.ts";
+import { signal } from "./signal/index.ts";
+import { effect } from "./effect/index.ts";
 
 // deno-lint-ignore ban-types
 type Effect = Function;

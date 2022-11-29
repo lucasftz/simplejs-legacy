@@ -1,4 +1,4 @@
-import { render, h as React } from "simplejs/dom";
+import React, { render } from "simplejs/dom";
 import { App } from "~/src/App.tsx";
 
 function Root() {
