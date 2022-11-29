@@ -1,6 +1,6 @@
 {
   "imports": {
-    "~/": "./",
+    "~/": "./src/",
     "std/": "https://deno.land/std@0.155.0/",
     "simplejs/dom": "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/dom/index.ts",
     "simplejs/server": "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/server/index.ts",

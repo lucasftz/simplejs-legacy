@@ -1,5 +1,5 @@
-import React, { render } from "simplejs/dom";
-import { App } from "~/src/App.tsx";
+import { React, render, JSX } from "simplejs/dom";
+import { App } from "~/App.tsx";
 
 function Root() {
   return <App />;

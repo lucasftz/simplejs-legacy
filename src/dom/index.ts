@@ -1,5 +1,6 @@
-import { h } from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/dom/h/index.ts";
-import { render } from "https://raw.githubusercontent.com/lucasftz/simplejs/main/src/dom/render/index.ts";
+import { React } from "./h/index.ts";
+import { render } from "./render/index.ts";
+import type { JSX } from "./jsx-runtime/index.ts";
 
-export { render };
-export default h;
+export type { JSX };
+export { React, render };

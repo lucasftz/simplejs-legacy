@@ -55,4 +55,4 @@ function createElement(
   return element;
 }
 
-export const h = { createElement };
+export const React = { createElement };

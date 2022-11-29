@@ -1,3 +1,4 @@
+import { React, JSX } from "simplejs/dom";
 import { useSignal } from "simplejs/hooks";
 
 function Counter() {
